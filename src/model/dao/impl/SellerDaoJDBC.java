@@ -210,7 +210,7 @@ public class SellerDaoJDBC implements SellerDao {
 			rs = st.executeQuery();
 			
 			List<Seller> list = new ArrayList<>();
-			Map<Integer, Department> map = new HashMap<>();
+			Map<Integer, Department> map = new HashMap<Integer, Department>();
 			
 			while (rs.next()) {
 				
